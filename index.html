@@ -2,99 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<>>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PetHelp</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
 <header>
-    <img src="img/phone.jpg" alt="Іконка телефону" width="30" height="25">
-    (099) 234 22 48       (032) 363 83 54
-    <img src="img/facebook-logo.png" alt="Лого фейсбуку" width="30" height="30">
-    <img src="img/instagram-logo.png" alt="Лого інстаграму" width="30" height="30">
-    <img src="img/google+-logo.png" alt="Лого гугл+" width="30" height="30">
-
-    <br>
-        <img id="sheltersLogo" src="img/shelter's-logo.jpg" alt="Лого притулку" width="60" height="60">  PetHelp - притулок для тварин
-        <table>
-            <tr>
-                <td><a href="#aboutUS">Про нас</a></td>
-                <td><a href="#adoption">Адопція</a></td>
-                <td><a href="#donation">Благодійна допомога</a></td>
-                <td><a href="#contacts">Контакти</a></td>
-            </tr>
-        </table>
-    <div>
-        <img src="img/cover-dog.png" alt="">
-    </div>
+    <div class="logo"> PetHelp - притулок для тварин </div>
+    <nav>
+        <ul class="menu">
+                <li><a href="#aboutUS">Про нас</a></li>
+                <li><a href="#adoption">Адопція</a></li>
+                <li><a href="#donation">Благодійна допомога</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
 </header>
-
-<div id="aboutUs">
-
-        <img class="" src="img/" alt="">
-        Лікуємо, вакцинуємо, стерилізуємо та знаходимо родини для бездомних собак
-
-
-        <img class="" src="img/" alt="">
-        Завдяки притулку вже більше 4300 тварин отримали щасливе життя у нових родинах.
-
-        <img class="" src="img/" alt="">
-        Існуємо лише на пожертви меценатів і благодійників
-</div>
-
-
+<main>
+<section>
+    <div id="aboutUs">
+    <div class="aboutUs-text">
+        <img class ="aboutUs-icons" src="img/dog-in-hands-icon.png" alt="Собака в людських руках">
+        <p> Лікуємо, вакцинуємо, стерилізуємо та знаходимо родини для бездомних собак</p>
+    </div>
+    <div class="aboutUs-text">
+        <img class ="aboutUs-icons" src="img/house-icon.png" alt="Будинок">
+        <p>Завдяки притулку вже більше 4300 тварин отримали щасливе життя у нових родинах</p>
+    </div>
+    <div class="aboutUs-text">
+        <img class ="aboutUs-icons" src="img/donation-icon.png" alt="Донація">
+        <p>Існуємо лише на пожертви меценатів і благодійників</p>
+    </div>
+    </div>
+</section>
+<section>
     <div id="adoption">
-        <p>
-            Адопція
-        </p>
-        <p>
-            Джек
-            <img src="img/jackDog.jpeg" alt="" width="400" height="400">
-            Стать: хлопчик
-            Вік: 1 рік
-            <!----> тут має бути скрол вправо і вліво. можливо дві напівпрозорі фотки ше двох собачок біля значку скролу вбік. + зробити шоб якшо навести мишкою на картинку має відавати повідомленням підсказку "натисніть шоб подивитись більше" ---!
-        </p>
+        <h2> Адопція</h2>
+        <br>
+        <figure>
+            <h3>Джек</h3>
+            <img src="img/jackDog.jpeg" alt="Один з кандидатів на всиновлення: Джек" title="Натисніть, щоб дізнатись більше">
+                <figcaption>
+                <p>Стать: хлопчик</p>
+                <p>Вік: 1 рік</p>
+                </figcaption>
+        </figure>
     </div>
-    <div id="donation">
-            Благодійна допомога
+</section>
+    <article id="donation">
+        <h2>Благодійна допомога</h2>
 
-                <p>Притулок щодня опікується сотнею тварин. Найкращий спосіб допомогти нам і нашим хвостикам – пожертвувати будь-яку суму на лікування, перетримку хворих тварин та забезпечення роботи підприємства.</p>
+        <p>Притулок щодня опікується сотнею тварин. Найкращий спосіб допомогти нам і нашим хвостикам – пожертвувати будь-яку суму на лікування, перетримку хворих тварин та забезпечення роботи підприємства.</p>
 
-                <input type="button" value="Допомогти">
-                або на картку ПБ притулку: 5169 3305 1043 1114
-
-                Хочеш допомогти інакше? Тобі <a href="">сюди</a>!
-    </div>
-
+        <input type="button" value="Допомогти">
+        <aside>
+            або на картку ПБ притулку: 5169 3305 1043 1114
+        </aside>
+        <aside>
+        Хочеш допомогти інакше? Тобі <a href="">сюди</a>!
+        </aside>
+    </article>
+    </main>
     <div id="contacts">
-        <div>
-            <img src="img/phone-icon.png" alt="Іконка телефону">
+    <div id="form-wrapper">
+                    <form action="https://formspree.io/xeqjlbyn"
+                          method="POST">
+                        <div id="form-inner">
+
+                            <label for="name">Ім'я:</label>
+                            <input type="text" class="input" id="name" placeholder="Введіть ім'я...">
+
+                            <label for="email">Email:</label>
+                            <input type="email" class="input" id="email" placeholder="Введіть e-mail...">
+
+                            <label for="message">Повідомлення:</label>
+                            <textarea class="input textarea" id="message" placeholder="Ваше повідомлення..."></textarea>
+
+                             <input type="submit" class="button" value="Відправити">
+
+                        </div>
+                    </form>
+    </div>
+    </div>
+    <article class="contacts">
+        <span>
+            <img src="img/phone-icon.jpg" alt="Іконка телефону">
             (099) 234 22 48
             (032) 363 83 54
-        </div>
-        <div>
+        </span>
+        <span>
             <img src="img/mail-icon.png" alt="Іконка пошти">
             pethelp@gmail.com
-        </div>
-        <div>
+        </span>
+        <span>
             <img src="img/clock-icon.png" alt="Іконка годинника">
             Пн.-Нд.
             9:00-21:00
-        </div>
-        <div>
+        </span>
+        <span>
             <img src="img/location-icon.png" alt="Іконка локації">
             м. Львів
             вул. Зоряна, 12
-        </div>
-    </div>
-        <div>
+        </span>
+    </article>
+        <figure>
             <img src="img/location.png" alt="Місцезнаходження притулку на карті">
-        </div>
-
+        </figure>
 
 <footer>
-
+<span>
+        <img src="img/phone-icon.jpg" alt="Іконка телефону">
+        (099) 234 22 48       (032) 363 83 54
+    </span>
+    <span class="header-logos">
+     <img src="img/facebook-logo.png" alt="Лого фейсбуку">
+     <img src="img/instagram-logo.png" alt="Лого інстаграму">
+     <img src="img/google+-logo.png" alt="Лого гугл+">
+    </span>
+    <a href="#aboutUS">Про нас</a>
+    <a href="#adoption">Адопція</a>
+    <a href="#donation">Благодійна допомога</a>
+    <a href="#contacts">Контакти</a>
 </footer>
 </body>
 </html>

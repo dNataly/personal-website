@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Karla&display=swap');
+
+:root {
+    font-family: 'Karla', sans-serif;
+    --main-color:black;
+    --accent-color: yellow;
+    scroll-behavior: smooth;
+    }
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header nav .logo {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+header nav .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .menu a:hover {
+    border: 1px solid var(--accent-color);
+}
+
+@media (ntn-width: 550px) {
+
+}
+
+header .banner {
+    background-image: url(../img/cover-dog.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px;
+}
+
+header .banner h1 {
+    font-family: 'Indie Flower', cursive;
+    color: white;
+}
