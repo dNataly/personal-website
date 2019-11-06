@@ -12,27 +12,38 @@ body {
     margin: auto;
 }
 
+div #aboutUs, #adoption, #donation, #contacts {
+    height: 100vh;
+}
+
 header nav .logo {
     font-family: 'Indie Flower', cursive;
     text-align: center;
 }
 
-header nav .menu {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
+header .menu {
+    display: inline;
 }
 
-header nav .menu a {
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+header .menu a {
     text-decoration: none;
-    text-transform: uppercase;
-    color: var(--main-color);
-    border: 1px solid transparent;
-    padding: 5px;
+    color:black;
+    padding:10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header nav .menu a:hover {
-    border: 1px solid var(--accent-color);
+header .menu a:hover {
+    font-weight: bold;
+}
+header .menu li {
+    float: left;
+    margin-right:5px;
 }
 
 @media (ntn-width: 550px) {
@@ -52,4 +63,21 @@ header .banner {
 header .banner h1 {
     font-family: 'Indie Flower', cursive;
     color: white;
+}
+
+main .contacts-icons {
+    width: 5%;
+    height: auto;
+}
+
+footer #footer-phone-icon {
+    width: 50px;
+    height: auto;
+    float:left;
+}
+
+footer .footer-logos {
+    width: 50px;
+    height: auto;
+    float:right;
 }
