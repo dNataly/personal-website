@@ -1,24 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture&display=swap');
 
-:root {
-    font-family: 'Karla', sans-serif;
-    --main-color:black;
-    --accent-color: yellow;
-    scroll-behavior: smooth;
+/*:root {
+    
     }
+    */
 
 body {
-    max-width: 980px;
-    margin: auto;
-}
+    margin: 0;
+    }
 
 div #aboutUs, #adoption, #donation, #contacts {
     height: 100vh;
-}
-
-header nav .logo {
-    font-family: 'Indie Flower', cursive;
-    text-align: center;
 }
 
 header .menu {
@@ -46,24 +38,41 @@ header .menu li {
     margin-right:5px;
 }
 
-@media (ntn-width: 550px) {
-
-}
-
 header .banner {
-    background-image: url(../img/cover-dog.png);
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient( rgba(255, 255, 255, 0.61), rgba(0, 0, 0, 0.61) ), url('../img/cover-dog.png');
+    background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 800px;
+    position: relative;
 }
 
-header .banner h1 {
+    header nav .logo {
     font-family: 'Indie Flower', cursive;
-    color: white;
+    text-align: center;
 }
+
+header .image-caption {
+    font-family: font-family: 'Black And White Picture', sans-serif;
+    color: white;
+    font-size: 500%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+/*.image-caption {
+  transform: translate(-50%, -50%);
+  position: absolute; 
+  top: 70%; 
+  left: 80%;
+  padding: 100px 100px;
+  background: rgba(255,255,255,.6);
+  */
 
 main .contacts-icons {
     width: 5%;

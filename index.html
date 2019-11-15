@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-
 <header>
-    <div class="logo"> PetHelp - притулок для тварин </div>
+    <div class = "banner">
+        <div class = "image-caption">
+            <div id="logo"> 
+            PetHelp
+            <br>
+            animal shelter
+            </div>
+        </div>
+    </div>
     <nav>
         <ul class="menu">
                 <li><a href="#aboutUS">Про нас</a></li>
@@ -21,25 +28,25 @@
     </nav>
 </header>
 <main>
-<section>
+<article>
     <div id="aboutUs">
-    <div class="aboutUs-text">
+    <div>
         <img class ="aboutUs-icons" src="img/dog-in-hands-icon.png" alt="Собака в людських руках">
-        <p> Лікуємо, вакцинуємо, стерилізуємо та знаходимо родини для бездомних собак</p>
+        <p class="aboutUs-text"> Лікуємо, вакцинуємо, стерилізуємо та знаходимо родини для бездомних собак</p>
     </div>
-    <div class="aboutUs-text">
+    <div>
         <img class ="aboutUs-icons" src="img/house-icon.png" alt="Будинок">
-        <p>Завдяки притулку вже більше 4300 тварин отримали щасливе життя у нових родинах</p>
+        <p class="aboutUs-text">Завдяки притулку вже більше 4300 тварин отримали щасливе життя у нових родинах</p>
     </div>
-    <div class="aboutUs-text">
+    <div>
         <img class ="aboutUs-icons" src="img/donation-icon.png" alt="Донація">
-        <p>Існуємо лише на пожертви меценатів і благодійників</p>
+        <p class="aboutUs-text">Існуємо лише на пожертви меценатів і благодійників</p>
     </div>
     </div>
-</section>
+</article>
 <section>
     <div id="adoption">
-        <h2> Адопція</h2>
+        <h2><a href = "dogs.html">Адопція</a></h2>
         <br>
         <figure>
             <h3>Джек</h3>
@@ -53,14 +60,13 @@
 </section>
     <div id="donation">
         <h2>Благодійна допомога</h2>
-
-        <p>Притулок щодня опікується сотнею тварин. Найкращий спосіб допомогти нам і нашим хвостикам – пожертвувати будь-яку суму на лікування, перетримку хворих тварин та забезпечення роботи підприємства.</p>
+        <p id = "donation-intro">Притулок щодня опікується сотнею тварин. Найкращий спосіб допомогти нам і нашим хвостикам – пожертвувати будь-яку суму на лікування, перетримку хворих тварин та забезпечення роботи підприємства.</p>
 
         <input type="button" value="Допомогти">
-        <aside>
+        <aside id = "bank-details">
             або на картку ПБ притулку: 5169 3305 1043 1114
         </aside>
-        <aside>
+        <aside id ="for-more">
         Хочеш допомогти інакше? Тобі <a href="">сюди</a>!
         </aside>
     </div>
