@@ -1,92 +1,98 @@
-@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture&display=swap');
-
-/*:root {
-    
-    }
-    */
-
-body {
-    margin: 0;
-    }
-
-div #aboutUs, #adoption, #donation, #contacts {
-    height: 100vh;
+:root {
+    scroll-behavior : smooth;
 }
 
-header .menu {
-    display: inline;
+body {
+    max-width : 980px;
+    margin : auto;
+}
+
+h1, h2, h3, p, div, nav, header, footer {
+    margin : 0;
+    padding : 0;
+}
+
+div #aboutUs, #adoption, #donation, #contacts {
+    height : 100vh;
+}
+
+header nav .menu {
+    display : flex;
+    list-style-type : none;
+    justify-content : space-around;
+    padding : 0;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
+    list-style : none;
+    margin : 0;
+    padding-left : 0;
 }
 
 header .menu a {
-    text-decoration: none;
-    color:black;
-    padding:10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration : none;
+    color : black;
+    padding : 10px;
+    font-family : Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header .menu a:hover {
-    font-weight: bold;
+    font-weight : bold;
 }
 header .menu li {
-    float: left;
-    margin-right:5px;
+    float : left;
+    margin-right : 5px;
 }
 
 header .banner {
-    margin: 0;
-    height: 100vh;
-    background: linear-gradient( rgba(255, 255, 255, 0.61), rgba(0, 0, 0, 0.61) ), url('../img/cover-dog.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
+    margin : 0;
+    height : 100vh;
+    background-image : linear-gradient(rgb(255 255 255 / 0.61), rgb(0 0 0 / 0.61)), url("../img/cover-dog.png");
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : cover;
 }
 
-    header nav .logo {
-    font-family: 'Indie Flower', cursive;
-    text-align: center;
+header nav .logo {
+    font-family : 'Indie Flower', cursive;
+    text-align : center;
 }
 
 header .image-caption {
-    font-family: font-family: 'Black And White Picture', sans-serif;
-    color: white;
-    font-size: 500%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 40%;
+    font-family : 'Indie Flower', cursive;
+    color : white;
+    font-size : 500%;
+    display : flex;
+    justify-content : center;
+    position : absolute;
+    top : 50%;
+    left : 43%;
 }
 
-/*.image-caption {
-  transform: translate(-50%, -50%);
-  position: absolute; 
-  top: 70%; 
-  left: 80%;
-  padding: 100px 100px;
-  background: rgba(255,255,255,.6);
-  */
+main article .aboutUs {
+    display: block;
+}
 
-main .contacts-icons {
-    width: 5%;
-    height: auto;
+
+
+main article img .aboutUs-icons {
+    height: 64px;
+}
+
+main div img .contacts-icons {
+    position : relative;
+    max-height : 100px;
+    max-width : 100px;
 }
 
 footer #footer-phone-icon {
-    width: 50px;
-    height: auto;
-    float:left;
+    width : 50px;
+    height : auto;
+    float : left;
 }
 
 footer .footer-logos {
-    width: 50px;
-    height: auto;
-    float:right;
+    width : 50px;
+    height : auto;
+    float : right;
 }
