@@ -3,9 +3,12 @@
 }
 
 body {
-    max-width : 980px;
-    margin : auto;
-    background: url("../img/background.jpg");
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, p, div, nav, header, footer {
@@ -13,11 +16,12 @@ h1, h2, h3, p, div, nav, header, footer {
     padding : 0;
 }
 
-div #aboutUs, #adoption, #donation, #contacts {
+section {
     height : 100vh;
 }
 
-main .text-center {
+h2 a {
+    text-decoration: none;
     font-size: 20px;
     text-align: center;
     padding: 40px;
@@ -45,8 +49,7 @@ ul {
     list-style : none;
     margin : 0;
     padding : 0;
-    
-    /* position: sticky; */
+    /*position: sticky;*/
     background: rgba(34,34,34,.2);
 }
 
@@ -60,7 +63,7 @@ header .menu a {
     display: block;
     line-height: 50px;
     padding: 0 20px;
-    font-size: 15px;
+    font-size: 17px;
     font-family : 'Indie Flower', cursive;
     transition:.4s linear;
 }
@@ -78,28 +81,80 @@ header  {
     height : 100vh;
     background-image : linear-gradient(rgb(255 255 255 / 0.61), rgb(0 0 0 / 0.61)), url("../img/cover-dog.png");
     background-repeat : no-repeat;
-    background-position : center;
+    background-position : bottom;
     background-size : cover;
-
 }
 
 
-header .image-caption {
+header .logo {
     font-family : 'Indie Flower', cursive;
     color : white;
     font-size : 500%;
     display : flex;
     position : absolute;
-    top : 50%;
+    top : 30%;
     left : 43%;
+}
+
+/* header .logo-descrtiption {
+    font-family : 'Indie Flower';
+    color : white;
+    font-size : 400%;
+    display : flex;
+    position : absolute;
+    top : 60%;
+    left : 10%;
+} */
+
+
+main section {
+    display: flex;
+    flex-direction: row;
+    max-width: max-content;
 }
 
 #aboutUs-left, #aboutUs-center, #aboutUs-right {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    padding: 20px;
 }
 
 
+.aboutUs-text {
+    display: flex;
+	flex-direction: column;
+	text-align: center;
+    margin: 15px;
+}
+
+.aboutUs-icons {
+    display: flex;
+	justify-content: flex-start;
+}
+
+@media (min-width: 360px) {
+  main section  #aboutUs-wrapper #aboutUs {
+    font-size: 1.0em;
+  }
+}
+
+@media (min-width: 720px) {
+  #aboutUs-left, #aboutUs-center, #aboutUs-right {
+    display: inline-block;
+    width: 25%;
+  }
+
+  #aboutUs-left, #aboutUs-center, #aboutUs-right {
+    margin-left: 5%;
+  }
+
+}
+
+section {
+    background-color: antiquewhite;
+}
 
 img .aboutUs-icons {
     display:block;
@@ -111,6 +166,9 @@ main div img .contacts-icons {
     max-width : 100px;
 }
 
+footer {
+    background-image: url("../img/Shore.jpg");
+}
 footer #footer-phone-icon {
     width : 50px;
     height : auto;
@@ -129,3 +187,5 @@ footer .footer-logos {
         display: flex;
     }
 } */
+
+
