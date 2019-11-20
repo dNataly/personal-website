@@ -10,7 +10,6 @@ body {
   padding: 0;
   text-align: center;
   background-color: rgb(243, 243, 213);
-
 }
 
 h1, h2, h3, p, div, nav, header, footer {
@@ -36,10 +35,6 @@ section {
 
 h2 {
     margin: 30px;
-}
-
-article {
-    background-color: white;
 }
 
 main .shelters-dog article {

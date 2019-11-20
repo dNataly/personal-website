@@ -20,6 +20,11 @@ section {
     height : 100vh;
 }
 
+h1 p .aboutUs-text {
+    font-size: 60px;
+}
+
+
 h2 a {
     text-decoration: none;
     font-size: 30px;
@@ -67,16 +72,11 @@ header .menu a {
 header .menu a:hover {
     background:rgba(0,0,0,.3);
 }
+
 header .menu li {
     float : left;
     margin-right : 5px;
 }
-/* 
-@media (min-width: 320)
-    header nav .menu {
-        display: flex;
-        flex: 1;
-    } */
 
 header  {
     margin : 0;
@@ -86,7 +86,6 @@ header  {
     background-position : bottom;
     background-size : cover;
 }
-
 
 header .logo {
     font-family : 'Indie Flower', cursive;
@@ -105,7 +104,6 @@ header .logo {
     align-items: center;
     padding: 20px;
 }
-
 
 .aboutUs-text {
     display: flex;
@@ -166,14 +164,9 @@ img .aboutUs-icons {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
- 
-.card-text {
-    display: flex;
-	flex-direction: column;
-	text-align: center;
-    margin: 10px;
-    margin-left:
-}.card-body {
+}
+
+.card-body {
     display: flex;
 	justify-content: flex-start;
 }
@@ -196,10 +189,6 @@ img .aboutUs-icons {
 
 }
 
-#donation {
-    background-color: #444;
-}
-
 #contacts {
     display: flex;
     justify-content: space-around;
@@ -214,9 +203,14 @@ img .aboutUs-icons {
         grid-gap: 10px;
     }
 }
+
 h3 {
 	color: #444;
 	text-align: center;
+}
+
+footer {
+    background-color: antiquewhite;
 }
 
 footer .contacts-icons {
