@@ -1,53 +1,46 @@
 :root {
-    scroll-behavior: smooth;
-    }
-    
+    scroll-behavior : smooth;
+}
+
 body {
-    max-width: 980px;
-    margin: auto;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: rgb(243, 243, 213);
+
 }
 
 h1, h2, h3, p, div, nav, header, footer {
-    margin: 0;
-    padding: 0;
+    margin : 0;
+    padding : 0;
 }
 
-div #aboutUs, #adoption, #donation, #contacts {
-    height: 100vh;
+section {
+    height : 100vh;
 }
 
-
-header nav .menu {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-}
-
-header .menu a {
+#logo h1 a {
     text-decoration: none;
-    color:black;
-    padding:10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+    color: black;
 }
 
-header .menu a:hover {
-    font-weight: bold;
-}
-header .menu li {
-    float: left;
-    margin-right:5px;
+#logo h1 a: hover {
+    color: white; 
 }
 
+h2 {
+    margin: 30px;
+}
 
-
-/* нижче блок картинок */
+article {
+    background-color: white;
+}
 
 main .shelters-dog article {
     padding: 5px;
@@ -74,6 +67,7 @@ main .shelters-dog article img {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 
 @media (min-width: 980px) {
     main .shelters-dog {
