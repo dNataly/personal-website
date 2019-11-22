@@ -9,6 +9,8 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  font-size: 1.5rem;
+  background-color: antiquewhite;
 }
 
 h1, h2, h3, p, div, nav, header, footer {
@@ -17,19 +19,15 @@ h1, h2, h3, p, div, nav, header, footer {
 }
 
 section {
-    height : 100vh;
+    min-height : 100vh;
+    padding-top: 60px;
 }
-
-h1 p .aboutUs-text {
-    font-size: 60px;
-}
-
 
 h2 a {
     text-decoration: none;
     font-size: 30px;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 a {
@@ -44,9 +42,11 @@ a {
     list-style-type : none;
     justify-content : space-around;
     padding : 0;
-    position: absolute;
+    position: fixed!important;
     top:0;
     right:0;
+    z-index: 1;
+    width: 100%;
 }
 
 
@@ -54,7 +54,7 @@ ul {
     list-style : none;
     margin : 0;
     padding : 0;
-    background: rgba(34,34,34,.2);
+    background: rgba(34, 34, 34, 0.37);
 }
 
 
@@ -94,52 +94,41 @@ header .logo {
     display : flex;
     position : absolute;
     top : 30%;
-    left : 43%;
+    left : 35%;
+}
+
+section #aboutUs-wrapper {
+    display: grid;
 }
 
 #aboutUs-left, #aboutUs-center, #aboutUs-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    padding: 20px;
-}
-
-.aboutUs-text {
-    display: flex;
-	flex-direction: column;
-}
-
-.aboutUs-icons {
-    display: flex;
-	justify-content: flex-start;
 }
 
 @media (min-width: 360px) {
-  main section  #aboutUs-wrapper #aboutUs {
-    font-size: 1.0em;
+  .aboutUs-icons, .aboutUs-text {
+    display: row;
+    margin-top: 5%;
   }
 }
 
 @media (min-width: 720px) {
   #aboutUs-left, #aboutUs-center, #aboutUs-right {
     display: inline-block;
+    width: 31%;
+    margin-top: 5%;
+  }
+
+@media (min-width: 850px) {
+  #aboutUs-left, #aboutUs-center, #aboutUs-right {
+    display: inline-block;
     width: 25%;
   }
 
   #aboutUs-left, #aboutUs-center, #aboutUs-right {
-    margin-left: 5%;
+    margin: 3%;
+    margin-top: 10%;
   }
-
-}
-
-section {
-    background-color: antiquewhite;
-}
-
-img .aboutUs-icons {
-    display:block;
-}
 
 #adoption {
     background: url('../img/background-paws.png');
@@ -151,11 +140,12 @@ img .aboutUs-icons {
     color: black;
 }
 
-#adoption h2 a: hover {
+#adoption h2 a: hover{
     text-decoration: none;
 }
+
 .card {
-    margin: 5%;
+    margin: 3%;
 }
 
 .card {
@@ -171,9 +161,13 @@ img .aboutUs-icons {
 	justify-content: flex-start;
 }
 
+.card-text {
+    margin-left: 10%;
+}
+
 @media (min-width: 360px) {
   main section  .adoption-wrapper #adoption {
-    font-size: 1.0em;
+    width: 100%;
   }
 }
 
@@ -182,11 +176,42 @@ img .aboutUs-icons {
     display: inline-block;
     width: 25%;
   }
+}
 
-  #aboutUs-left, #aboutUs-center, #aboutUs-right {
-    margin-left: 5%;
-  }
+aside #for-more {
+    padding: 80px;
+}
 
+.adoption-button input[type=button] {
+    border: 3px solid;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    background-color: black;
+}
+
+.adoption-button input[type=button]:hover {
+    color: black;
+    background-color: white;
+}
+
+.button input[type=button] {
+    border: 3px solid;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    background-color: yellow;
+}
+
+.button input[type=button]:hover {
+    color: yellow;
+    background-color: white;
 }
 
 #contacts {
@@ -209,15 +234,29 @@ h3 {
 	text-align: center;
 }
 
+#clock{
+  font-family:Tahoma, sans-serif;
+  font-size:20px;
+  font-weight:bold;
+  color:#0000cc;	
+}
+
 footer {
     background-color: antiquewhite;
 }
 
 footer .contacts-icons {
-    margin: 10px;
+    margin: 20px;
 }
 
 .footer-logos {
     margin: 10px;
 }
 
+.contact-icons {
+    display: inline-block;
+}
+
+.map {
+    margin-left: 30%;
+} 
